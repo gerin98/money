@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1076597206123",
+    "firebase_url": "https://moneymade-51fe2.firebaseio.com",
+    "project_id": "moneymade-51fe2",
+    "storage_bucket": "moneymade-51fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076597206123:android:daae82e33505c4c7",
+        "android_client_info": {
+          "package_name": "com.example.gerin.money"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076597206123-fuu90iblr6ls613g069ia72ua02hr87g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3qFZLuOEoHZ5EYezUI4D60IHKhzTv1To"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
