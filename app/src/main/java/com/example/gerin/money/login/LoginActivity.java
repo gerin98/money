@@ -46,6 +46,8 @@ public class LoginActivity extends AppCompatActivity {
         EditText email = findViewById(R.id.email_login);
         EditText password = findViewById(R.id.password_login);
 
+        signin.setOnClickListener(view1 -> startActivity(new Intent(LoginActivity.this, MainActivity.class)));
+
         signup.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class)));
 
     }
