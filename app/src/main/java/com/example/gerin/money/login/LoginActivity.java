@@ -24,19 +24,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-//        getSupportActionBar().hide();
-
-        Button crashButton = findViewById(R.id.signin_button);
-        crashButton.setText("Enter");
-        crashButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-               Intent nextIntent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(nextIntent);
-                finish();
-            }
-        });
-
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
 
