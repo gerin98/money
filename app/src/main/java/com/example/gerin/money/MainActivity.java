@@ -57,6 +57,19 @@ public class MainActivity extends AppCompatActivity {
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
 
+//    public static void function() throws IOException {
+//        OkHttpClient client = new OkHttpClient();
+//        Request request = new Request.Builder()
+//                .url("https://api.td-davinci.com/api/branches")
+//                .addHeader("Authorization", "YOUR API KEY GOES HERE")
+//                .build();
+//
+//        Response response = client.newCall(request).execute();
+//        String result = response.body().string();
+//        System.out.println(result);
+//    }
+
+
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
 
