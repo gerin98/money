@@ -13,6 +13,13 @@ import android.text.Html;
 import android.view.MenuItem;
 
 // install the OkHttp library using Maven or Gradle
+import com.anychart.AnyChart;
+import com.anychart.AnyChartView;
+import com.anychart.chart.common.dataentry.SingleValueDataSet;
+import com.anychart.charts.CircularGauge;
+import com.anychart.core.axes.Circular;
+import com.anychart.graphics.vector.Fill;
+
 import java.io.IOException;
 
 import okhttp3.OkHttpClient;
@@ -56,6 +63,28 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+
+//        AnyChartView anyChartView = findViewById(R.id.any_chart_view);
+//        CircularGauge circularGauge = AnyChart.circular();
+//        circularGauge.data(new SingleValueDataSet(new String[] { "23", "34", "67", "93", "56", "100"}));
+//        circularGauge.fill("#fff")
+//                .stroke(null)
+//                .padding(0d, 0d, 0d, 0d)
+//                .margin(100d, 100d, 100d, 100d);
+//        circularGauge.startAngle(0d);
+//        circularGauge.sweepAngle(270d);
+//        Circular xAxis = circularGauge.axis(0)
+//                .radius(100d)
+//                .width(1d)
+//                .fill((Fill) null);
+//        xAxis.scale()
+//                .minimum(0d)
+//                .maximum(100d);
+//        xAxis.ticks("{ interval: 1 }")
+//                .minorTicks("{ interval: 1 }");
+//        xAxis.labels().enabled(false);
+//        xAxis.ticks().enabled(false);
+//        xAxis.minorTicks().enabled(false);
 
     }
 
