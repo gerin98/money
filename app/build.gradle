@@ -44,6 +44,9 @@ dependencies {
     //Sidebar
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
+
+    //Functions
+    'com.google.firebase:firebase-functions:16.1.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
