@@ -24,19 +24,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-//        getSupportActionBar().hide();
-
-        Button crashButton = findViewById(R.id.signin_button);
-        crashButton.setText("Enter");
-        crashButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-               Intent nextIntent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(nextIntent);
-                finish();
-            }
-        });
-
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
 
@@ -45,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
 
         EditText email = findViewById(R.id.email_login);
         EditText password = findViewById(R.id.password_login);
+
+        signin.setOnClickListener(view1 -> startActivity(new Intent(LoginActivity.this, MainActivity.class)));
 
         signup.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class)));
 

@@ -12,20 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.MenuItem;
 
-// install the OkHttp library using Maven or Gradle
-import com.anychart.AnyChart;
-import com.anychart.AnyChartView;
-import com.anychart.chart.common.dataentry.SingleValueDataSet;
-import com.anychart.charts.CircularGauge;
-import com.anychart.core.axes.Circular;
-import com.anychart.graphics.vector.Fill;
-
 import java.io.IOException;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
 
 
 public class MainActivity extends AppCompatActivity {
