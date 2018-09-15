@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.gerin.money.MainActivity;
@@ -41,13 +42,16 @@ public class CreateAccountActivity extends AppCompatActivity {
         EditText email = findViewById(R.id.createaccount_emailaddress);
         EditText password = findViewById(R.id.createaccount_password);
         EditText fullname = findViewById(R.id.createaccount_name);
+        EditText username = findViewById(R.id.createaccount_username);
+
+        RadioGroup genders = findViewById(R.id.createaccount_gender);
 
         Button submit = findViewById(R.id.createaccount_signup);
 
         submit.setOnClickListener(v -> {
 
             if (email.getText().toString() == "" || password.getText().toString() == "" ||
-                    fullname.getText().toString() == "") {
+                    fullname.getText().toString() == "" || username.getText().toString() == "") {
                 Toast.makeText(this, "You dumb bitch", Toast.LENGTH_SHORT).show();
             } else {
                 mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
@@ -61,6 +65,16 @@ public class CreateAccountActivity extends AppCompatActivity {
                                     UserObject object = new UserObject();
                                     object.setEmail(email.getText().toString());
                                     object.setFullname(fullname.getText().toString());
+                                    object.setGender("" + genders.getCheckedRadioButtonId());
+                                    object.setUsername(username.getText().toString());
+
+                                    if (genders.getCheckedRadioButtonId() == 1) {
+                                        object.setGender("Male");
+                                    } else if (genders.getCheckedRadioButtonId() == 2) {
+                                        object.setGender("Female");
+                                    } else {
+                                        object.setGender("Neither");
+                                    }
                                     mDatabase.child("users").child(user.getUid()).setValue(object);
                                     startActivity(new Intent(CreateAccountActivity.this, MainActivity.class));
                                 } else {

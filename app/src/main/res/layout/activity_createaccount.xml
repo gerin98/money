@@ -11,9 +11,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:padding="15dp"
-            android:layout_marginTop="10dp"
             android:text="Give us your personal information."
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -24,6 +24,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Full Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/createaccount_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="UserName"
             android:inputType="text" />
 
         <TextView
@@ -53,6 +61,12 @@
                 android:layout_margin="5dp"
                 android:text="Female" />
 
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Neither"/>
+
         </RadioGroup>
 
         <EditText
@@ -75,8 +89,8 @@
             android:id="@+id/createaccount_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text="SIGN UP" />
 
     </LinearLayout>
 

@@ -8,24 +8,24 @@
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
         android:layout_width="96dp"
         android:layout_height="96dp"
+        android:layout_gravity="center"
         android:src="@drawable/profile_pic"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FFFFFF"/>
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
 
     <TextView
         android:id="@+id/navheader_fullname"
         android:layout_width="match_parent"
-        android:textStyle="bold"
-        android:textSize="20dp"
         android:layout_height="wrap_content"
-        android:text="My name"
+        android:gravity="center"
         android:paddingTop="8dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:text="My name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 </LinearLayout>
