@@ -25,11 +25,7 @@
         android:textSize="20dp"
         android:layout_height="wrap_content"
         android:text="My name"
-<<<<<<< HEAD
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-=======
         android:paddingTop="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
->>>>>>> 172a414c6f2ad86fe3219844a50e1d8c895dbe31
 
 </LinearLayout>
