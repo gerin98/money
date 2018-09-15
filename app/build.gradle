@@ -45,8 +45,11 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
 
-    //Functions
+    //Firebase Functions
     'com.google.firebase:firebase-functions:16.1.0'
+
+    //Firebase database
+    implementation 'com.google.firebase:firebase-database:16.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
