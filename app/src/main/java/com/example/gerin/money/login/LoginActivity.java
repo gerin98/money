@@ -7,6 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+<<<<<<< HEAD
+=======
+//import com.crashlytics.android.Crashlytics;
+import com.example.gerin.money.MainActivity;
+>>>>>>> cb9558a764f57688f195d640d586690afde87839
 import com.example.gerin.money.R;
 import com.example.gerin.money.login.create.CreateAccountActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+<<<<<<< HEAD
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
 
@@ -33,5 +39,16 @@ public class LoginActivity extends AppCompatActivity {
 
         signup.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class)));
 
+=======
+        Button crashButton = findViewById(R.id.signin_button);
+        crashButton.setText("Enter");
+        crashButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+               Intent nextIntent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(nextIntent);
+                finish();
+            }
+        });
+>>>>>>> cb9558a764f57688f195d640d586690afde87839
     }
 }

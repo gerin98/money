@@ -16,10 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
         <activity
             android:name=".login.create.CreateAccountActivity"
             android:screenOrientation="portrait"></activity>
+=======
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+>>>>>>> cb9558a764f57688f195d640d586690afde87839
     </application>
 
 </manifest>
