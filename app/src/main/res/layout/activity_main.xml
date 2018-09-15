@@ -10,6 +10,7 @@
 
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
     <FrameLayout
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -20,6 +21,68 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="@color/colorPrimaryDark"
+            fab:menu_colorRipple="@color/colorAccent"
+            fab:menu_labels_maxLines="2"
+            fab:menu_labels_ellipsize="end">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_label="TD"
+                style="@style/MenuButtonsStyle" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_label="RBC"
+                style="@style/MenuButtonsStyle" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_label="CIBC"
+                style="@style/MenuButtonsStyle" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/toolbar"
+            android:layout_gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You saved $"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 dollars today!"/>
+
+
+        </LinearLayout>
 
     </FrameLayout>
 
@@ -33,27 +96,5 @@
         app:menu="@menu/sidebar_items"
         app:headerLayout="@layout/nav_header" />
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent" />-->
-
-
-    <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/floatingActionButton2"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginBottom="21dp"-->
-        <!--android:layout_marginEnd="25dp"-->
-        <!--android:clickable="true"-->
-        <!--android:tint="@color/colorPrimary"-->
-        <!--tools:layout_editor_absoluteX="85dp"-->
-        <!--tools:layout_editor_absoluteY="460dp" />-->
 
 </android.support.v4.widget.DrawerLayout>

@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        getSupportActionBar().hide();
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -59,27 +57,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-//        //create second thread to update progress bar
-//        Thread second = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//                try{
-//                    Message msg = new Message();
-//
-//                    function();
-//
-//                    msg.what = 1;
-//                    handler.sendMessage(msg);
-//                    Thread.sleep(1000);
-//                }catch (InterruptedException e){} catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//
-//            }
-//        });
-//        second.start();
-
     }
 
     @Override
@@ -91,42 +68,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    public static void function() throws IOException {
-        OkHttpClient client = new OkHttpClient();
-        Request request = new Request.Builder()
-                .url("https://api.td-davinci.com/api/branches")
-                .addHeader("Authorization", "YOUR API KEY GOES HERE")
-                .build();
-
-        Response response = client.newCall(request).execute();
-        String result = response.body().string();
-        System.out.println(result);
-    }
-
-
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg){
-//            int currentPosition = msg.what;
-//
-//            //update play button
-//            if(!mp.isPlaying()) {
-//                playButton.setBackgroundResource(R.drawable.play_button);
-//            }
-//
-//            //continuously update progress bar
-//            progressBar.setProgress(currentPosition);
-//
-//            //continuously update time stamps
-//            String elapsedTime = createTimeStamp(currentPosition);
-//            elapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = createTimeStamp(totalTime - currentPosition);
-//            remainingTimeLabel.setText(remainingTime);
-
-        }
-
-    };
-
 
 }
