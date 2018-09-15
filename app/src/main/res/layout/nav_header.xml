@@ -3,15 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="192dp"
     android:background="@color/colorPrimary"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:gravity="bottom"
     android:orientation="vertical"
-    android:gravity="bottom">
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <TextView
+        android:id="@+id/navheader_fullname"
         android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20dp"
         android:layout_height="wrap_content"
         android:text="My name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>
