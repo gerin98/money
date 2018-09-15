@@ -99,12 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        CardView otherone = (CardView) getLayoutInflater().inflate(R.layout.cardview_accountinfo, null);
-        container.addView(otherone);
-
-        CardView sup = (CardView) getLayoutInflater().inflate(R.layout.cardview_accountinfo, null);
-        container.addView();
     }
 
     @Override

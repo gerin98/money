@@ -16,7 +16,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@android:color/transparent"
+        android:background="@drawable/textinputborder"
         android:gravity="center"
         android:hint="Email"
         android:inputType="textEmailAddress"
