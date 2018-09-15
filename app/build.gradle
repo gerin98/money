@@ -58,6 +58,9 @@ dependencies {
     //Firebase database
     implementation 'com.google.firebase:firebase-database:16.0.1'
 
+    //image view
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
 }
 
 apply plugin: 'com.google.gms.google-services'
