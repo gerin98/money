@@ -1,7 +1,9 @@
 package com.example.gerin.money.apis;
 
-import android.widget.TextView;
+import com.example.gerin.money.objects.AccountObject;
+import com.example.gerin.money.objects.CustomerObject;
 
 public interface DataHandler {
-    void getCustomerName(final TextView textView);
+    void getCustomerAccounts(String id, CustomerObject customerObject);
+    void getAccountData(String id, AccountObject accountObject);
 }
