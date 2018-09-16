@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".FriendsActivity">
 
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Add Friends"
+        android:layout_margin="15dp">
+    </SearchView>
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
