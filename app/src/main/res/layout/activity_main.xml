@@ -33,6 +33,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Chequing Account"
+                    android:textSize="20dp"
+                    android:fontFamily="Roboto"
+                    android:layout_weight="8"
+                    android:padding="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/td_bank"
+                    android:layout_gravity="center_vertical"
+                    android:maxHeight="100px"
+                    android:maxWidth="100px"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"/>
+
+            </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:padding="8dp">
 
                 <LinearLayout
