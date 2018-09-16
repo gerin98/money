@@ -8,12 +8,8 @@
         android:layout_width="150dp"
         android:layout_height="163dp"
         android:layout_gravity="center"
-<<<<<<< HEAD
-        android:layout_marginTop="55dp" />
-=======
-        android:src="@drawable/stock"
-        android:layout_marginTop="55dp"/>
->>>>>>> friends
+        android:layout_marginTop="55dp"
+        android:src="@drawable/stock" />
 
     <EditText
         android:id="@+id/email_login"
@@ -24,12 +20,9 @@
         android:gravity="center"
         android:hint="Email"
         android:inputType="textEmailAddress"
-<<<<<<< HEAD
         android:padding="10dp" />
-=======
-        android:layout_marginTop="50dp"
-        android:padding="10dp"/>
->>>>>>> friends
+    android:layout_marginTop="50dp"
+    android:padding="10dp"/>
 
     <EditText
         android:id="@+id/password_login"
