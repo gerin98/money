@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listview_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FriendsActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp">
+
+        <com.lalongooo.Rings
+            android:id="@+id/rings"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:rings_inner_first_color="#FF9F1C"
+            app:rings_inner_first_progress="30"
+            app:rings_inner_first_text="Sam (Me)"
+            app:rings_inner_second_color="#4BC6B9"
+            app:rings_inner_second_progress="75"
+            app:rings_inner_second_text="Jim"
+            app:rings_inner_third_color="#757780"
+            app:rings_inner_third_progress="85"
+            app:rings_inner_third_text="Bob"
+            app:rings_overall_color="#EA3546"
+            app:rings_overall_progress="100"
+            app:rings_overall_text="Total"
+            app:rings_text_size="20sp"
+            app:rings_unfinished_color="#f2f2f2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="You are in the Lead!!!"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/friend_tv"
+            android:fontFamily="Roboto"/>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_listview"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="0dp"
+        android:divider="@null"/>
+
+
+
+</LinearLayout>

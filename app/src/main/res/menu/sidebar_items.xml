@@ -17,5 +17,8 @@
         <item
             android:id="@+id/settings"
             android:title="Settings" />
+        <item
+            android:id="@+id/friends"
+            android:title="Friends" />
     </group>
 </menu>

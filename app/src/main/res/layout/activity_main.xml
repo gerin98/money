@@ -8,6 +8,17 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--/>-->
+
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
     <FrameLayout
         xmlns:fab="http://schemas.android.com/apk/res-auto"
@@ -81,25 +92,6 @@
 
 
         </LinearLayout>
-
-        <!--<com.anychart.AnyChartView-->
-            <!--android:id="@+id/any_chart_view"-->
-            <!--android:layout_width="180dp"-->
-            <!--android:layout_height="250dp"-->
-            <!--android:layout_marginStart="8dp"-->
-            <!--android:layout_marginTop="8dp"-->
-            <!--app:layout_constraintStart_toStartOf="parent"-->
-            <!--app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--<ProgressBar-->
-            <!--android:id="@+id/progress_bar"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--app:layout_constraintEnd_toEndOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="parent"-->
-            <!--app:layout_constraintTop_toTopOf="parent"-->
-            <!--/>-->
 
     </FrameLayout>
 
