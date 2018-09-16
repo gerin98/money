@@ -8,17 +8,6 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-
-    <!--<ProgressBar-->
-        <!--android:id="@+id/progress_bar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--/>-->
-
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
     <FrameLayout
         xmlns:fab="http://schemas.android.com/apk/res-auto"
@@ -55,21 +44,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 fab:fab_label="TD"
-                style="@style/MenuButtonsStyle" />
+                style="@style/MenuButtonsStyleTD" />
 
             <com.github.clans.fab.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 fab:fab_label="RBC"
-                style="@style/MenuButtonsStyle" />
+                style="@style/MenuButtonsStyleRBC" />
 
             <com.github.clans.fab.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 fab:fab_label="CIBC"
-                style="@style/MenuButtonsStyle" />
+                style="@style/MenuButtonsStyleCIBC" />
 
         </com.github.clans.fab.FloatingActionMenu>
 
@@ -103,7 +92,32 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/sidebar_items"
-        app:headerLayout="@layout/nav_header" />
+        app:headerLayout="@layout/nav_header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/logout"
+                android:text="© Money inc."
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                 />
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+
+    </android.support.design.widget.BottomNavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>
