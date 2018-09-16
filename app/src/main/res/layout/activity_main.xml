@@ -22,6 +22,194 @@
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Information"
+                        android:fontFamily="Roboto"
+                        android:textSize="14dp"
+                        android:padding="8dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="Roboto"
+                            android:text="Percentage"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="38dp"
+                            android:textColor="#77ea96"
+                            android:text="60%"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+
+                        android:layout_gravity="center_vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:fontFamily="Roboto"
+                            android:text="Deposits"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="18dp"
+                            android:textColor="#77ea96"
+                            android:text="$4,000"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:fontFamily="Roboto"
+                            android:text="Withdrawals"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="18dp"
+                            android:textColor="#ff7449"
+                            android:text="$1,000"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Budget"
+                        android:fontFamily="Roboto"
+                        android:textSize="14dp"
+                        android:padding="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            app:rcProgress="60"
+                            app:rcSecondaryProgress="80"
+                            app:rcMax="100"
+                            app:rcRadius="4dp"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcReverse="false"
+                            app:rcProgressColor="#FF4081"
+                            app:rcSecondaryProgressColor="#f95e93"
+                            app:rcBackgroundColor="#c4c4c4"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analytics"
+                    android:fontFamily="Roboto"
+                    android:textSize="14dp"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Roboto"
+                    android:textSize="14dp"
+                    android:padding="8dp"
+                    android:text="You saved 2.3% more than this time last month"/>
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
         <com.github.clans.fab.FloatingActionMenu
             android:id="@+id/menu_green"
             android:layout_width="wrap_content"
@@ -61,101 +249,6 @@
                 style="@style/MenuButtonsStyleCIBC" />
 
         </com.github.clans.fab.FloatingActionMenu>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/toolbar"
-            android:orientation="vertical"
-            android:layout_gravity="center">
-
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="You saved $"/>-->
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="10 dollars today!"/>-->
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:padding="8dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Account Information"
-                    android:fontFamily="Roboto"
-                    android:textSize="14dp"
-                    android:padding="8dp"/>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:padding="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Budget"
-                        android:fontFamily="Roboto"
-                        android:textSize="14dp"
-                        android:padding="8dp"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ProgressBar
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="fill_parent"
-                            android:layout_height="8dp"
-                            android:id="@+id/GreenProgressBar"
-                            android:indeterminate="false"
-                            android:layout_marginLeft="15dp"
-                            android:layout_gravity="center_vertical"
-                            android:progressDrawable="@drawable/custom_green_progressbar" />
-
-                    </LinearLayout>
-
-
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:padding="8dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Other"
-                    android:fontFamily="Roboto"
-                    android:textSize="14dp"
-                    android:padding="8dp"/>
-
-            </android.support.v7.widget.CardView>
-
-
-        </LinearLayout>
 
     </RelativeLayout>
 

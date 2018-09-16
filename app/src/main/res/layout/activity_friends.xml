@@ -68,7 +68,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Leader Boards"
+                android:text="Leaderboards"
                 android:fontFamily="Roboto"
                 android:padding="10dp"
                 android:gravity="center_horizontal"
