@@ -2,6 +2,10 @@ package com.example.gerin.money;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.accounts.Account;
+import android.databinding.DataBindingUtil;
+import android.os.Handler;
+import android.os.Message;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +20,23 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+// install the OkHttp library using Maven or Gradle
+import com.anychart.AnyChart;
+import com.anychart.AnyChartView;
+import com.anychart.chart.common.dataentry.SingleValueDataSet;
+import com.anychart.charts.CircularGauge;
+import com.anychart.core.axes.Circular;
+import com.anychart.graphics.vector.Fill;
+import com.example.gerin.money.apis.TDDataHandler;
+import com.example.gerin.money.databinding.ActivityMainBinding;
+import com.example.gerin.money.objects.AccountObject;
+import com.example.gerin.money.objects.CustomerObject;
+
+import java.io.IOException;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 import com.example.gerin.money.login.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -52,6 +73,23 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setHomeAsUpIndicator(R.drawable.baseline_menu_white_18dp);
 
         mDrawerLayout = findViewById(R.id.drawer);
+
+
+        TDDataHandler tdAPI = new TDDataHandler(this);
+        CustomerObject customer = new CustomerObject();
+        tdAPI.getCustomerAccounts("8c71e8d0-e63b-4365-b9d9-f2a30817fa4e_c18dca28-f10f-4a0a-b905-db636046bd4c", customer);
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        AccountObject account1 = new AccountObject();
+        tdAPI.getAccountData("8c71e8d0-e63b-4365-b9d9-f2a30817fa4e_d62ec0ba-6f0a-447f-a3cd-0c09211fd97a", account1);
+
+        ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        mainBinding.setAccount(account1);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
