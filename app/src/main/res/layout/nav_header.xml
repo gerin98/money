@@ -4,13 +4,9 @@
     android:layout_height="192dp"
     android:background="@color/colorPrimary"
     android:gravity="bottom"
-    android:orientation="vertical"
-<<<<<<< HEAD
-    android:gravity="bottom">
-=======
+    android:orientation="vertical">
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
->>>>>>> 4f0bf9277322f170b738b9b63a47c348ca9c7cea
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"

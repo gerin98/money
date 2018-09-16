@@ -2,15 +2,12 @@ package com.example.gerin.money.apis;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Cache;
 import com.android.volley.Network;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.BasicNetwork;
 import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HurlStack;
@@ -32,7 +29,7 @@ public class TDDataHandler implements DataHandler {
 
     private RequestQueue rQueue;
 
-    public TDDataHandler(Context ctx){
+    public TDDataHandler(Context ctx) {
         // Instantiate the cache
         Cache cache = new DiskBasedCache(ctx.getCacheDir(), 1024 * 1024); // 1MB cap
 
@@ -50,7 +47,7 @@ public class TDDataHandler implements DataHandler {
             try {
                 JSONObject json = new JSONObject(response);
                 JSONArray array = json.getJSONObject("result").getJSONArray("bankAccounts");
-                for(int i = 0; i < array.length(); i++) {
+                for (int i = 0; i < array.length(); i++) {
                     customerObject.accountIDs.add(array.getJSONObject(i).getString("id"));
                     Log.i("TDDataHandler", array.getJSONObject(i).getString("id"));
                 }
@@ -60,7 +57,7 @@ public class TDDataHandler implements DataHandler {
         }, error -> {
             Log.e("TDDataHandler", "Failed to get customer data");
             error.printStackTrace();
-        }){
+        }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
@@ -89,7 +86,7 @@ public class TDDataHandler implements DataHandler {
         }, error -> {
             Log.e("TDDataHandler", "Failed to get customer data");
             error.printStackTrace();
-        }){
+        }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
