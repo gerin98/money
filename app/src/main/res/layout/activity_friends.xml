@@ -11,7 +11,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="30dp">
+        android:layout_margin="30dp">
 
         <LinearLayout
         android:layout_width="match_parent"
@@ -55,13 +55,38 @@
     </android.support.v7.widget.CardView>
 
 
-    <ListView
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/my_listview"
-        android:layout_gravity="center_horizontal"
-        android:dividerHeight="0dp"
-        android:divider="@null"/>
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leader Boards"
+                android:fontFamily="Roboto"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="28dp"/>
+
+            <ListView
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_listview"
+                android:layout_gravity="center_horizontal"
+                android:dividerHeight="0dp"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 
 
 
