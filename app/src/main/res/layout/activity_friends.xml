@@ -33,7 +33,7 @@
             android:layout_height="200dp"
             app:rings_inner_first_color="#FF9F1C"
             app:rings_inner_first_progress="30"
-            app:rings_inner_first_text="Sam (Me)"
+            app:rings_inner_first_text="John (Me)"
             app:rings_inner_second_color="#4BC6B9"
             app:rings_inner_second_progress="75"
             app:rings_inner_second_text="Jim"
